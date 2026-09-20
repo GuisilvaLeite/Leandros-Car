@@ -13,9 +13,7 @@ h3 {
 		h1 {
 	 font-family: "Barlow Semi Condensed", sans-serif;
 	
-
 	}
-
 
 		h4 {
 	 font-family: "Barlow Semi Condensed", sans-serif;
@@ -53,6 +51,11 @@ h3 {
 	
 
 	}
+
+  body {
+ 	 background-color: #f0f0f0; 
+	}
+
 
 /*CABECALHO*/
 
@@ -122,6 +125,169 @@ nav a:hover {
 
 .botao:hover {
   background-color: #c83d13;
+}
+
+
+
+/*SUB-CABEÇALHO*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subcabecalho {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #1b1670;
+   padding: 15px 40px;
+	
+	}
+
+.ladoA {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.ladoB {
+  display: flex;
+  flex-direction: column; 
+  gap: 5px; 
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+	
+
+/*BODY*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.servicos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+.servicos > div {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;               
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicos h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 12px;  
+  letter-spacing: 0.5px;
+}
+
+.servicos > div {
+  position: relative; 
+  padding: 0;         
+}
+.servicos .imagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: 1;       
+}
+
+.conteudo-sobreposto {
+  position: relative;
+  z-index: 2;         
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.801); 
+  margin: 20px;
+}
+
+
+
+/*PREÇO*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   background-color: #f0f0f0;
+   padding: 15px 40px;
+}
+
+#idDois {
+  font-size:20px;
+}
+
+#idTres {
+  font-size:20px;
+}
+
+
+
+
+/*SUB-RODAPÉ*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.subrodape {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color:orange;
+   padding: 15px 40px;
+}
+
+.botaodois {
+  background-color: #ff6f22; 
+  color: white;            
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: inline-block;
+  border-radius: 6px;        
+  transition: background-color 0.2s ease;
+}
+
+.botaodois:hover {
+  background-color: #e55e13; /* Tom ligeiramente mais escuro ao passar o mouse */
 }
 
 
