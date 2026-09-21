@@ -50,9 +50,12 @@ h3 {
 
 		img {
 	 font-family: "Barlow Semi Condensed", sans-serif;
-	
 
 	}
+
+  body {
+    background-color: rgba(240, 243, 243, 0.886);
+  }
 
 /*CABECALHO*/
 
@@ -87,7 +90,6 @@ h3 {
 .logo h3 {
 	 font-size: 18px;
 	}
-
 
 
 /*NAVEGACÃO*/
@@ -142,7 +144,19 @@ nav a:hover {
     height: auto;
     align-items: left;
 }
+.botaoSenha {
+  text-decoration: none;
+  color: orange;
+}
 
+.caixa-texto {
+  height: 30px;
+  width: 150px;
+  border: 1px solid #777;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  align-items: center;
+}
 
 /*BOTÃO DE AGENDAMENTO*/
 	.botao {
