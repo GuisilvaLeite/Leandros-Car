@@ -5,6 +5,9 @@ h3 {
 	
 
 	}
+  span {
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
 		h2 {
 	 font-family: "Barlow Semi Condensed", sans-serif;
 	
@@ -25,6 +28,11 @@ h3 {
 	}
 	
 		p {
+	 font-family: "Barlow", sans-serif;
+	
+
+	}
+  label {
 	 font-family: "Barlow", sans-serif;
 	
 
@@ -120,22 +128,51 @@ nav a {
 nav a:hover {
   color:orange;
 }
+/* Formulário */
+.HeaderDados {
+  display: flex; 
+  flex-direction: column;
+  font-size: 24px;
+  margin-bottom: 10px;
+  align-items: center;
+}
 
+.grupoTabela {
+  display: flex; 
+  flex-direction: column;
+  font-size: 24px;
+  margin-bottom: 10px;
+  align-items: center;
+}
 
+.EMailEscrita {
+  width: 200px; 
+  word-wrap: break-word; 
+  white-space: normal; 
+  box-align: right;
+}
 /*BOTÃO DE AGENDAMENTO*/
 	#botao1 {
+  display: flex;
+  font-size: 20px;
+  width: 300px;
+  margin: auto;
+  border-radius: 4px;
+  justify-content: center;
   background-color: #ff751f;
   color: white;
   padding: 12px 20px;
   text-decoration: none;
   font-weight: bold;
-  display: inline-block;
+  display: flex;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.botao:hover {
+  #botao1:hover {
   background-color: #c83d13;
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -148,10 +185,10 @@ nav a:hover {
 
 .informacao {
    display: flex;
-   align-items: center;
+   align-items: left;
    flex-direction: column;
    justify-content: center;
-   text-align: center;
+   text-align: left;
    width: 100%;
    background-color: #1b1670;
    padding: 15px 40px;
@@ -161,10 +198,15 @@ nav a:hover {
 
 .frase-um {
   color: white;
+  font-size: 15px;
 }
 
 .frase-dois {
   color: orange; 
+  font-size: 30px;
+}
+.grupoForm {
+ 
 }
 
 
