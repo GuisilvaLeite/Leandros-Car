@@ -56,7 +56,6 @@ h3 {
 	}
 
 
-/*LOGO*/
 .logo {
     display: flex;
     align-items: center;
@@ -71,6 +70,202 @@ h3 {
 .logo h3 {
 	 font-size: 18px;
 	}
+
+
+
+
+
+
+
+/*BODY*/
+.sub-cabecalho {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+  background-image: url('img/Mecanica.png');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.sub-cabecalho::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.496);
+  z-index: 1;
+}
+
+.sub-sub {
+  position: relative;
+  z-index: 2;
+  max-width: 450px;
+}
+
+.sub-sub h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: white;
+}
+
+.sub-sub h1.cor {
+  color: orangered; 
+}
+
+.sub-sub p {
+  font-size: 1.05rem;
+  margin: 20px 0 30px 0;
+  color: white;
+  line-height: 1.4;
+}
+
+.botoes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.botaoUM {
+  background-color: #f26522;
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid #f26522;
+  transition: background-color 0.2s ease;
+}
+
+.botaoUM:hover {
+  background-color: #d85213;
+  border-color: #d85213;
+}
+
+
+.botaoDois {
+  background-color: #f26522;
+  color: white;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid white;
+  transition: all 0.2s ease;
+}
+
+.botaoDois:hover {
+  background-color: #d85213;
+  border-color: #d85213;
+}
+
+/*MARKETING*/
+.pilar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.pilarA, .pilarB, .pilarC, .pilarD {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pilarA {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.pilar h4, .pilar strong {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+}
+
+.pilar img {
+  max-height: 32px;
+  width: auto;
+  object-fit: contain;
+}
+
+.pilar strong {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.pilar p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+#idUM {
+  font-size: 20px;
+}
+
+
+/*SERVIÇOS*/
+
+#idTres {
+  align-items: left;
+  font-size: 23px;
+}
+
+.link-servicos {
+  align-items: flex-end;
+  color: #ff6b35; 
+  text-decoration: none; 
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.link-serviços:hover {
+    text-decoration: underline; 
+}
+
+.servicos {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  max-width: 2000px auto;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.servicos img {
+  width: 100%;
+  max-width: 1080px; 
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.servicos p {
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1080px; 
+  object-fit: cover;
+  border-radius: 2px;
+  font-weight: bold;
+}
 
 
 
@@ -181,7 +376,6 @@ nav a:hover {
    color: black;
 	}
 
-/*BOTÃO DE AGENDAMENTO*/
 
 .botaodois{
   background-color: black;
