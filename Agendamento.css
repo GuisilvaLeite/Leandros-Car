@@ -173,7 +173,7 @@ nav a:hover {
 
 
 /*BOTÃO DE AGENDAMENTO*/
-	#botao1 {
+	#link {
   display: flex;
   font-size: 20px;
   width: 300px;
@@ -190,7 +190,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-  #botao1:hover {
+  #link:hover {
   background-color: #c83d13;
   display: flex;
   justify-content: center;
