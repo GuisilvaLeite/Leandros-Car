@@ -1,5 +1,5 @@
-/*TEXTO*/
 
+/*TEXTO*/
 h3 {
 	 font-family: "Barlow", sans-serif;
 	
@@ -149,6 +149,11 @@ nav a:hover {
   color: orange;
 }
 
+.infoLogin label {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: normal;
+}
+
 .caixa-texto {
   height: 30px;
   width: 150px;
@@ -156,6 +161,24 @@ nav a:hover {
   background-color: #ffffff;
   box-sizing: border-box;
   align-items: center;
+}
+
+.caixa-texto input {
+  width: 100%;
+  height: 100%;
+  padding: 4px 8px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.caixa-texto:focus-within {
+  border-color: #ff751f;
+  box-shadow: 0 0 0 2px rgba(255, 117, 31, 0.2);
+}
+
+.caixa-texto input:focus {
+  outline: none;
 }
 
 /*BOTÃO DE AGENDAMENTO*/
@@ -242,4 +265,3 @@ main {
 .rodape {
     width: 100%;
 }
-
