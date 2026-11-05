@@ -9,6 +9,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+      <!-- Aqui carregamos o Bootstrap para usar as classes dele nesta página. -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="Stylesheet" href="Cliente.css" type="text/css">
   </head>
 
@@ -28,14 +30,15 @@
             <a href="Cliente.html">Área do cliente</a>
 	</nav>
 
-             <a href="Agendamento.html" class="botao">Agende Seu Serviço</a>
+             <!-- Os botões usam a classe .btn do Bootstrap junto com as classes de estilo do site. -->
+             <a href="Agendamento.html" class="btn botao">Agende Seu Serviço</a>
               </div>
 
        <div class="infoLogin">
       <div>
 
         <div>
-                <a class="botaoSenha" href="index.html">Voltar ao Inicio</a>
+                <a class="btn botaoSenha" href="index.html">Voltar ao Inicio</a>
                 <div >
                 <br>
                 <img class= "cadeado" src="img/Cadeado.png" alt="cadeado">
@@ -49,26 +52,30 @@
     </br>
         
         <div>
-          <a> E-MAIL: </a>
+          <label for="email-cliente">E-MAIL:</label>
         </br>
-          <div class="caixa-texto"></div>
+          <div class="caixa-texto">
+            <input type="email" id="email-cliente" name="email" aria-label="E-mail" autocomplete="email" placeholder="Digite seu e-mail">
+          </div>
         </div>
     </br>
         <div >
-            <a> SENHA: </a>
-                <div class="caixa-texto"></div>
+            <label for="senha-cliente">SENHA:</label>
+                <div class="caixa-texto">
+                  <input type="password" id="senha-cliente" name="senha" aria-label="Senha" autocomplete="current-password" placeholder="Digite sua senha">
+                </div>
         </div>
 
                 <div>
                     <table>
                     </br>
-                        <a href="" id="Entrar">Entrar</a>
+                        <a href="" id="Entrar" class="btn">Entrar</a>
                     </table>
                 </div>
 
                 <div>
                 </br>
-                    <a class="botaoSenha" href="">Esqueci minha senha</a>       
+                    <a class="btn botaoSenha" href="">Esqueci minha senha</a>       
                 </div>
         </div>
 
