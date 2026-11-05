@@ -1,5 +1,4 @@
 /*TEXTO*/
-
 h3 {
 	 font-family: "Barlow", sans-serif;
 	
@@ -171,6 +170,26 @@ nav a:hover {
   box-sizing: border-box;
 }
 
+.caixa-texto:focus-within {
+  border-color: #ff751f;
+  box-shadow: 0 0 0 2px rgba(255, 117, 31, 0.2);
+}
+
+.caixa-texto input,
+.caixa-texto select {
+  width: 100%;
+  height: 100%;
+  padding: 6px 10px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.caixa-texto input:focus,
+.caixa-texto select:focus {
+  outline: none;
+}
+
 
 /*BOTÃO DE AGENDAMENTO*/
 	#link {
@@ -206,25 +225,41 @@ nav a:hover {
 
 .informacao {
    display: flex;
-   align-items: left;
-   flex-direction: column;
+   align-items: center;
    justify-content: center;
-   text-align: left;
    width: 100%;
    background-color: #1b1670;
    padding: 15px 40px;
-   font-size: 25px;
-   gap: 5px; 
 	}
 
-.frase-um {
-  color: white;
-  font-size: 15px;
+.busca-servicos {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
 }
 
-.frase-dois {
-  color: orange; 
-  font-size: 30px;
+.busca-servicos .form-label {
+  color: white;
+  font-weight: bold;
+}
+
+.busca-servicos .list-group {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.agendamento .container {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.agendamento .row {
+  display: block;
+  margin: 0;
 }
 .grupoForm {
  
@@ -295,3 +330,4 @@ body {
 .rodape {
     width: 100%;
 }
+
