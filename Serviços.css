@@ -1,5 +1,4 @@
 /*TEXTO*/
-
 h3 {
 	 font-family: "Barlow", sans-serif;
 	
@@ -184,7 +183,7 @@ nav a:hover {
 }
 
 
-.servicos > div {
+.servicos > a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,9 +208,25 @@ nav a:hover {
   letter-spacing: 0.5px;
 }
 
-.servicos > div {
+.servicos > a {
   position: relative; 
-  padding: 0;         
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.servicos > a:hover,
+.servicos > a:focus-visible {
+  color: inherit;
+  text-decoration: none;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicos > a:focus-visible {
+  outline: 3px solid #ff751f;
+  outline-offset: 3px;
 }
 .servicos .imagem {
   position: absolute;
