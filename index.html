@@ -2,6 +2,9 @@
     <head>
       <title> Leandro's Car </title>
       <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Aqui carregamos o Bootstrap para usar as classes dele nesta página. -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	  <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
@@ -27,7 +30,8 @@
             <a href="Cliente.html">Área do cliente</a>
 	</nav>
 
-             <a href="Agendamento.html" class="botao">Agende Seu Serviço</a>
+             <!-- Os botões usam a classe .btn do Bootstrap junto com as classes de estilo do site. -->
+             <a href="Agendamento.html" class="btn botao">Agende Seu Serviço</a>
               </div>
             
            
@@ -41,16 +45,17 @@
     </p>
     
     <div class="botoes">
-      <a href="Agendamento.html" class="botaoUM">AGENDAR ATENDIMENTO</a>
-      <a href="Serviços.html" class="botaoDois">CONHEÇA NOSSOS SERVIÇOS</a>
+      <a href="Agendamento.html" class="btn botaoUM">AGENDAR ATENDIMENTO</a>
+      <a href="Serviços.html" class="btn botaoDois">CONHEÇA NOSSOS SERVIÇOS</a>
     </div>
   </div>
 </div>
-            
+        <br>
         <div class="pilar">
               <div class="pilarA">
               <div class="pilar-icon-container"></div>
-              <h4>Por que a Leandros Car?</h4>
+              <h4 id="tamanho" >Por que a Leandros Car?</h4>
+		
               <p id="idUM"> Cuidar hoje é<br> 
                 economizar amanhã!
               </p>
@@ -77,38 +82,48 @@
                 supresas no orçamento</p>
              </div>
         </div>
-             <div> 
-              <h4 id="idTres">O que fazemos:</h4>
-            </div>
-               
-            <div class="servicos">
-
-                <div class="imgUM">
-                <p>Revisão de veiculo</p>
-                <img src="img/Revisão.png" alt="Revisão">
-                </div>
-                
-                <div class="imgDois">
-                <p>Diagnóstico automotivo</p>
-                <img src="img/Diagnóstico.png" alt="Diagnóstico">
-                </div>
-
-                <div class="imgTres">
-                <p>Concerto de automóveis</p>
-                <img src="img/Conserto.png" alt="Conserto">
-                </div>
-
-                <div class="imgQuatro">
-                <p>Manuternção Preventiva</p>
-                <img src="img/Manutenção.png" alt="Manutenção">
-                </div>
-
-            </div>
+             <section class="container py-5" aria-labelledby="servicos-titulo">
+               <h2 class="text-center mb-4" id="servicos-titulo">O que fazemos:</h2>
+               <div class="row g-4">
+                 <div class="col-6 col-md-3">
+                   <a class="card h-100 text-dark text-decoration-none servico-card" href="Agendamento.html?servico=revisao">
+                     <img class="card-img-top servico-imagem" src="img/Revisão.png" alt="Revisão de veículos">
+                     <div class="card-body">
+                       <h3 class="card-title h5">Revisão de veículos</h3>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-6 col-md-3">
+                   <a class="card h-100 text-dark text-decoration-none servico-card" href="Agendamento.html?servico=diagnostico">
+                     <img class="card-img-top servico-imagem" src="img/Diagnóstico.png" alt="Diagnóstico automotivo">
+                     <div class="card-body">
+                       <h3 class="card-title h5">Diagnóstico automotivo</h3>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-6 col-md-3">
+                   <a class="card h-100 text-dark text-decoration-none servico-card" href="Agendamento.html?servico=conserto">
+                     <img class="card-img-top servico-imagem" src="img/Conserto.png" alt="Conserto de automóveis">
+                     <div class="card-body">
+                       <h3 class="card-title h5">Conserto de automóveis</h3>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="col-6 col-md-3">
+                   <a class="card h-100 text-dark text-decoration-none servico-card" href="Agendamento.html?servico=manutencao">
+                     <img class="card-img-top servico-imagem" src="img/Manutenção.png" alt="Manutenção preventiva">
+                     <div class="card-body">
+                       <h3 class="card-title h5">Manutenção preventiva</h3>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+             </section>
 
                <div class="informacao">
                 <h3>Está na hora de cuidar do seu carro</h3>
                 <p>Agende uma avaliação e conte com quem entende.</p>
-                <a href="Agendamento.html" class="botao">Agenda agora!</a>
+                <a href="Agendamento.html" class="btn botao">Agenda agora!</a>
 		</div>
               
             <div class="rodape">
